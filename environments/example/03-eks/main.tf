@@ -1,6 +1,6 @@
 module "eks" {
   source = "../../../modules/eks/"
-
-  environment  = "example"
   cluster_name = "example-eks"
+  environment = var.environment
+  vpc_id = var.vpc_id
 }
