@@ -8,7 +8,8 @@ The module will ask for the region you want to deploy this module to (default: e
 
 If you ever want to change anything to the configuration of the resources created by this module, you'll have to import said resources first. This is because we don't have a statefile stored for this deployment.
 
-You'll only run this the first time you're setting up a new environment. The following steps need to be taken:
+You'll only run this the first time you're setting up a new environment. 
+The following steps need to be taken (replacing `terraform-state-accountid-region` with the actual `var.bucket_name` value):
 
 ```
 tf init
