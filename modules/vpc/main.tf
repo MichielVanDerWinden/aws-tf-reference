@@ -36,3 +36,7 @@ module "vpc" {
     "kubernetes.io/role/internal-elb" = "1"
   }
 }
+
+output "vpc_id" {
+  value = module.vpc.vpc_id
+}
