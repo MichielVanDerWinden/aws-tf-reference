@@ -4,4 +4,5 @@ module "ecr" {
 
 module "eks" {
     source = "./eks"
+    environment = "example"
 }

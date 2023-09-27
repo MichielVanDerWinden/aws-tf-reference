@@ -18,7 +18,6 @@ module "primary" {
 
   username               = var.username
   password               = aws_ssm_parameter.database_password_parameter.value
-  create_random_password = false
 
   port = 3306
 
